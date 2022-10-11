@@ -1,9 +1,7 @@
 Hacktoberfest2022
-Happy Hacktober! :octocat: This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your Hacktoberfest T-shirt 👕 and stickers.
+Happy Hacktober! This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your Hacktoberfest T-shirt 👕 and stickers.
 
 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2022 challenge and earn a limited edition T-shirt.
-
-Register here for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.
 
 Contribute to start your journey with hacktoberfest and python. Happy Hacking💻!!! (*Required)
 
@@ -33,6 +31,7 @@ Write a program for multiplication fo nxm matrices.
 Don't forget to read the contributing rules to be successfully merged your PR and get rewards!!!
 Visit Hacktoberfest to get more information about Hacktoberfest 2022!!!
 Visit Hacktoberfest-swag to know more about your swags and rewards!!!
+
 Note:
 All contributors who have followed the rules to contribute get successfully merged PR. Don't forget to follow!!!
 Don't forget to star this repo.

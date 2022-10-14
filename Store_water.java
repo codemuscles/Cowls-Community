@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Store_water {
     public static int storeWater(ArrayList<Integer> height){
-        int maxWater = 0;
+        int ans = 0;
 
         // Two pointer approach --> O(n)
 
@@ -15,7 +15,7 @@ public class Store_water {
             int ht = Math.min(height.get(lp), height.get(rp));
             int wd = rp - lp;
             int currWater = ht*wd;
-            maxWater = Math.max(maxWater, currWater);
+            ans = Math.max(ans, currWater);
 
             // Update the pointers
             if (height.get(rp)>height.get(lp)) {
@@ -25,7 +25,7 @@ public class Store_water {
             }
         }
 
-        return maxWater;
+        return ans;
 
         // Brute Force -- O(n^2)
 
@@ -51,7 +51,7 @@ public class Store_water {
         height.add(8);
         height.add(3);
         height.add(7);
-
+        height.add(9);
         System.out.println(storeWater(height));
     }
 }

@@ -1,0 +1,61 @@
+#TIC TAC TOE
+import numpy
+board=numpy.array([["-","-","-"],["-","-","-"],["-","-","-"]])
+p1s="X"
+p2s="O"
+def check_rows(symbol):
+  for r in range(3):
+    count=0
+    for c in range(3):
+      if board[r][c]==symbol:
+        count=count+1
+    if count==3:
+      print(symbol,"WON")
+      return True
+  return False
+def check_cols(symbol):
+  for c in range(3):
+    count=0
+    for r in range(3):
+      if board[r][c]==symbol:
+        count=count+1
+    if count==3:
+      print(symbol,"WON")
+      return True
+  return False 
+def check_diagonals(symbol):
+  if board[0][2]==board[1][1] and board[1][1]==board[2][0] and board[1][1]==symbol:
+    print(symbol,"WON")
+    return True
+  if board[0][0]==board[1][1] and board[1][1]==board[2][2] and board[1][1]==symbol:
+    print(symbol,"WON")
+    return True  
+  return False
+def WON(symbol):
+  return check_rows(symbol) or check_cols(symbol) or check_diagonals(symbol)
+def place(symbol):
+  print(numpy.matrix(board))
+  while(1):
+    row=int(input("ENTER ROW-1 or 2 or 3:"))
+    col=int(input("ENTER COLUMN-1 or 2 or 3:"))
+    if row>0 and row<4 and col>0 and col<4 and board[row-1][col-1]=="-":
+      board[row-1][col-1]=symbol
+      break
+    else:
+      print("invalid input.please enter again")
+  board[row-1][col-1]==symbol
+def play():
+  for turn in range(9):
+    if turn%2==0:
+      print("X turn")
+      place(p1s)
+      if WON(p1s):
+        break
+    else:
+      print("O turn")
+      place(p2s)
+      if WON(p2s):
+        break
+  if not WON(p1s) and not WON(p2s):
+    print("DRAW")
+play()
